@@ -1,0 +1,18 @@
+﻿<Window x:Class="SZGYA_WPF_Quiz2.ErtekelesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SZGYA_WPF_Quiz2"
+        mc:Ignorable="d"
+        Title="ErtekelesWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Értékelés" HorizontalAlignment="Center" Margin="0,15"/>
+        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,69,0,0" VerticalAlignment="Top"/>
+        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,199,0,0" VerticalAlignment="Top"/>
+        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,320,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="83" Margin="35,100,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox HorizontalAlignment="Left" Height="83" Margin="35,212,0,0" VerticalAlignment="Top" Width="122"/>
+
+    </Grid>
+</Window>

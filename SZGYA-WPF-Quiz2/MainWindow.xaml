@@ -1,0 +1,54 @@
+﻿<Window x:Class="SZGYA_WPF_Quiz2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SZGYA_WPF_Quiz2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850">
+    <Grid>
+        <Label Content="Személyiségteszt" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Alias név:" HorizontalAlignment="Left" Margin="26,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="E-mail cím (nem kötelező)" HorizontalAlignment="Left" Margin="26,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbNev" HorizontalAlignment="Left" Margin="188,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="txbMail" HorizontalAlignment="Left" Margin="188,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <StackPanel x:Name="stck1f" HorizontalAlignment="Left" Height="69" Margin="42,191,0,0" VerticalAlignment="Top" Width="156">
+            <CheckBox Content="Olvasással"/>
+            <CheckBox Content="Sportolással"/>
+            <CheckBox Content="Barátokkal lógok"/>
+            <CheckBox Content="Művészet és kreatív tevékenységek"/>
+        </StackPanel>
+        <Label Content="1. Hogyan töltöd a szabadidődet?" HorizontalAlignment="Left" Margin="26,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="2. Milyen típusú filmeket szeretsz nézni?" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lst2f" Margin="54,305,614,32" SelectionMode="Multiple">
+            <ListBoxItem>Akció és kaland</ListBoxItem>
+            <ListBoxItem>Romantikus filmek</ListBoxItem>
+            <ListBoxItem>Horror vagy thriller</ListBoxItem>
+            <ListBoxItem>Dokumentumfilmek</ListBoxItem>
+
+        </ListBox>
+        <Label Content="3. Hogyan reagálsz a stresszes helyzetekre?" HorizontalAlignment="Left" Margin="400,62,0,0" VerticalAlignment="Top"/>
+        <StackPanel x:Name="stck3f" HorizontalAlignment="Left" Height="64" Margin="400,102,0,0" VerticalAlignment="Top" Width="228">
+            <RadioButton Content="Nyugodtan és racionálisan"/>
+            <RadioButton Content="Érzelmileg és intenzíven"/>
+            <RadioButton Content="Kerülöm a konfliktust"/>
+            <RadioButton Content="Megpróbálom megoldani a problémát"/>
+        </StackPanel>
+        <Label Content="4. Milyen a kommunikációs stílusod?" HorizontalAlignment="Left" Margin="400,177,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb4f" HorizontalAlignment="Left" Margin="413,217,0,0" VerticalAlignment="Top" Width="142">
+            <ComboBoxItem>Közvetlen és őszinte</ComboBoxItem>
+            <ComboBoxItem>Udvarias és megfontolt</ComboBoxItem>
+            <ComboBoxItem>Társaságkedvelő és beszédes</ComboBoxItem>
+            <ComboBoxItem>Zárkózott és hallgatag</ComboBoxItem>
+        </ComboBox>
+        <Label Content="5. Milyen környezetben érzed magad a legkényelmesebben?" HorizontalAlignment="Left" Margin="400,261,0,0" VerticalAlignment="Top"/>
+        <StackPanel x:Name="stck5f" HorizontalAlignment="Left" Height="83" Margin="310,305,0,0" VerticalAlignment="Top" Width="480">
+            <RadioButton Content="Nyüzsgő, társasági helyeken, mint például koncerteken vagy partikon"/>
+            <RadioButton Content="Nyugodt, csendes helyeken, mint például egy könyvtárban vagy a saját otthonodban"/>
+            <RadioButton Content="A szabadban, természetben, például erdőben vagy a tengerparton"/>
+            <RadioButton Content="Inspiráló helyeken, mint például múzeumokban vagy művészeti galériákban"/>
+        </StackPanel>
+        <Button Content="Beküldés" HorizontalAlignment="Center" Margin="0,402,0,0" VerticalAlignment="Top" Height="22" Width="79" Click="Button_Click"/>
+
+    </Grid>
+</Window>
