@@ -23,8 +23,39 @@ namespace SZGYA_WPF_Quiz2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ErtekelesWindow ertWin = new ErtekelesWindow();
+            List<string> elso = new List<string>();
+
+            foreach (CheckBox c in stck1f.Children)
+            {
+                elso.Add(c.Content.ToString());
+            }
+
+            List<string> masodik = new List<string>();
+
+            foreach (ListBoxItem l in lst2f.SelectedItems)
+            {
+                masodik.Add(l.Content.ToString());
+            }
+
+            string harmadik = string.Empty;
+
+            foreach (RadioButton r in stck3f.Children)
+            {
+                if ((bool)r.IsChecked) harmadik = r.Content.ToString();
+            }
+
+            string negyedik = ((ComboBoxItem)cmb4f.SelectedItem).Content.ToString();
+
+            string otodik = string.Empty;
+
+            foreach (RadioButton r in stck5f.Children)
+            {
+                if ((bool)r.IsChecked) otodik = r.Content.ToString();
+            }
+
+            ErtekelesWindow ertWin = new ErtekelesWindow(elso, masodik, harmadik, negyedik, otodik);
             ertWin.Show();
+
         }
     }
 }

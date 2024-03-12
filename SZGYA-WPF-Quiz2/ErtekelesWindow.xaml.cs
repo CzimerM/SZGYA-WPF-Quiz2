@@ -23,5 +23,16 @@ namespace SZGYA_WPF_Quiz2
         {
             InitializeComponent();
         }
+
+        public ErtekelesWindow(List<string> elso, List<string> masodik, string harmadik, string negyedik, string otodik)
+        {
+            InitializeComponent();
+
+            lst1v.ItemsSource = elso;
+            lst2v.ItemsSource = masodik;
+            lbl3v.Content = harmadik;
+            lbl4v.Content = negyedik;
+            lbl5v.Content = otodik;
+        }
     }
 }

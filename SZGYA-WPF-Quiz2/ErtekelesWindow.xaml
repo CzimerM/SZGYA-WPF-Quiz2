@@ -7,12 +7,17 @@
         mc:Ignorable="d"
         Title="ErtekelesWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Értékelés" HorizontalAlignment="Center" Margin="0,15"/>
-        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,69,0,0" VerticalAlignment="Top"/>
-        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,199,0,0" VerticalAlignment="Top"/>
-        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,320,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" Height="83" Margin="35,100,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox HorizontalAlignment="Left" Height="83" Margin="35,212,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label Content="Értékelés" HorizontalAlignment="Center" Margin="0,29,0,374" FontWeight="Bold" FontSize="14" Width="81"/>
+        <Label Content="1.kérdés" HorizontalAlignment="Left" Margin="35,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="2.kérdés" HorizontalAlignment="Left" Margin="35,199,0,0" VerticalAlignment="Top"/>
+        <Label Content="3.kérdés" HorizontalAlignment="Left" Margin="35,353,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lst1v" HorizontalAlignment="Left" Height="117" Margin="35,82,0,0" VerticalAlignment="Top" Width="220" Background="#7F060AFF"/>
+        <ListBox x:Name="lst2v" HorizontalAlignment="Left" Height="116" Margin="35,232,0,0" VerticalAlignment="Top" Width="220" Background="#7F060AFF"/>
+        <Label x:Name="lbl3v" Content="" HorizontalAlignment="Left" Margin="35,382,0,0" VerticalAlignment="Top" Background="#7F060AFF" Width="220" Height="26"/>
+        <Label Content="4.kérdés" HorizontalAlignment="Left" Margin="311,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="5.kérdés" HorizontalAlignment="Left" Margin="311,199,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl4v" Content="" HorizontalAlignment="Left" Margin="311,100,0,0" VerticalAlignment="Top" Background="#7F060AFF" Width="431" Height="26"/>
+        <Label x:Name="lbl5v" Content="" HorizontalAlignment="Left" Margin="311,232,0,0" VerticalAlignment="Top" Background="#7F060AFF" Width="431" Height="26"/>
 
     </Grid>
 </Window>
